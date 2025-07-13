@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-.header1 {
+body {
+    width: 100%;
+    margin: 0px;
+
+}
+.header1, .footer {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    margin: 0px;
+    
 }
 h1 {
     color: #F9FAF8;
@@ -16,6 +22,7 @@ a, p{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    text-wrap: wrap;
 }
 .right-links {
     display: flex;
@@ -24,11 +31,37 @@ a, p{
 .header2 {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    background-color: #1F2937;
+    width: 50%;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    flex-shrink: 0;
+}
+.clinic-image {
+    width: 448px;
+    height: 300px;
+
+    
+}
+.head, .footer {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: #1F2937;
-    padding: 20px;
-    text-align: center;
-    flex-direction: column;
+    gap: 20px;
+}
+.header1, .head {
+    content: border-box;
+    margin: 0;
+    padding: 20px 150px 40px;
 }
 .main-heading {
     color: #F9FAF8;
@@ -36,13 +69,18 @@ a, p{
     font-size: 48px;
     font-weight: 900;
 }
-button, .signup-section {
+button {
     background-color: #3882f6;
-}
-.signup-button {
-    border: oldlace;
+    color: oldlace;
+    border-style: none;
+    padding: 8px;
+    border-radius: 20px;
 }
 h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
     color: #1F2937;
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
@@ -50,9 +88,6 @@ h2 {
     margin-top: 20px;
     text-align: center;
 }
-
-
-
 .quote-section {
     background-color: #E5E7EB;
     padding: 40px;
@@ -61,4 +96,9 @@ h2 {
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
+}
+
+
+.footer {
+    justify-content: space-around;
 }
